@@ -49,19 +49,19 @@
   <form [formGroup]='profile'>
     <div class="mb-3">
       <label for="name" class="form-label">Name</label>
-      <input type="text" class="form-control" id="name" [formControlName]="name" name="name">
+      <input type="text" class="form-control" id="name" formControlName="name" name="name">
     </div>
     <div class="mb-3">
       <label for="email" class="form-label">Email address</label>
-      <input type="email" class="form-control" id="email" [formControlName]="email" name="email">
+      <input type="email" class="form-control" id="email" formControlName="email" name="email">
     </div>
     <div class="mb-3">
       <label for="mobile" class="form-label">Mobile</label>
-      <input type="tel" class="form-control" id="mobile" [formControlName]="mobile" name="mobile">
+      <input type="tel" class="form-control" id="mobile" formControlName="mobile" name="mobile">
     </div>
     <div class="mb-3">
       <label for="Gender" class="form-label">Gender</label>
-      <select class="form-select mb-3" [formControlName]="gender" name="Gender">
+      <select class="form-select mb-3" formControlName="gender" name="Gender">
         <option selected>Gender</option>
         <option value="Male">Male</option>
         <option value="Female">Female</option>
@@ -72,21 +72,21 @@
       <label for="form" class="form-lebel">Favourite Pokemon</label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
       <div class="form-check form-check-inline">
         <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Pikachu"
-          [formControlName]="pokemon" name="favouritePokemon">
+          formControlName="pokemon" name="favouritePokemon">
         <label class="form-check-label" for="inlineRadio1">Pikachu</label>
       </div>
       <div class="form-check form-check-inline">
         <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Chikorita"
-          [formControlName]="pokemon" name="favouritePokemon">
+          formControlName="pokemon" name="favouritePokemon">
         <label class="form-check-label" for="inlineRadio2">Chikorita</label>
       </div>
       <div class="form-check form-check-inline">
         <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="Charizard"
-          [formControlName]="pokemon" name="favouritePokemon">
+          formControlName="pokemon" name="favouritePokemon">
         <label class="form-check-label" for="inlineRadio3">Charizard</label>
       </div>
       <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="subscribe" [formControlName]="subscribe" name="subscribe">
+        <input type="checkbox" class="form-check-input" id="subscribe" formControlName="subscribe" name="subscribe">
         <label class="form-check-label" for="subscribe">Check me out</label>
       </div>
     </div>
